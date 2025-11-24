@@ -1,0 +1,142 @@
+/* Reset và Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Light Theme (Default) - Trắng sáng */
+body.light {
+  --app-bg: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  --primary-color: #000000;
+  --primary-dark: #1a1a1a;
+  --primary-light: rgba(0, 0, 0, 0.05);
+  
+  --text-color: #000000;
+  --text-secondary: #666666;
+  
+  --bg-color: #ffffff;
+  --item-bg: #ffffff;
+  --input-bg: #ffffff;
+  --filter-bg: #f8f9fa;
+  --stats-bg: #ffffff;
+  --button-bg: #f0f0f0;
+  --button-hover: #e8e8e8;
+  --toggle-bg: #ffffff;
+  
+  --border-color: #d0d0d0;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* Dark Theme - Đen tuyền với chữ trắng */
+body.dark {
+  --app-bg: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  --primary-color: #ffffff;
+  --primary-dark: #f0f0f0;
+  --primary-light: rgba(255, 255, 255, 0.1);
+  
+  --text-color: #ffffff;
+  --text-secondary: #aaaaaa;
+  
+  --bg-color: #000000;
+  --item-bg: #1a1a1a;
+  --input-bg: #1a1a1a;
+  --filter-bg: #0d0d0d;
+  --stats-bg: #1a1a1a;
+  --button-bg: #2a2a2a;
+  --button-hover: #333333;
+  --toggle-bg: #1a1a1a;
+  
+  --border-color: #444444;
+  --shadow: rgba(255, 255, 255, 0.05);
+}
+
+/* Smooth transitions for theme changes */
+body,
+body * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+.p-4 { padding: 2rem; }

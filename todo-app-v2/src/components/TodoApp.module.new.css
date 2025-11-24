@@ -1,0 +1,95 @@
+.container {
+  min-height: 100vh;
+  background: var(--app-bg);
+  transition: background 0.3s ease;
+}
+
+.todoApp {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0 0 10px 0;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin: 0;
+  font-weight: 400;
+}
+
+.noResults {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: var(--item-bg);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.noResults p {
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.clearSearchButton {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clearSearchButton:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .todoApp {
+    padding: 20px 15px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .todoApp {
+    padding: 15px 10px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+}
+

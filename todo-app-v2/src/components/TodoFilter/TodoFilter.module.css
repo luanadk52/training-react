@@ -1,0 +1,64 @@
+.todoFilter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: var(--filter-bg);
+  border-radius: 8px;
+}
+
+.filterButton {
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filterButton:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+.filterButton.active {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border-color: var(--primary-dark);
+}
+
+.count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.filterButton.active .count {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 600px) {
+  .todoFilter {
+    flex-direction: column;
+  }
+
+  .filterButton {
+    width: 100%;
+  }
+}
+

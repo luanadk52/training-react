@@ -1,0 +1,20 @@
+.todoList {
+  margin-bottom: 20px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-secondary);
+}
+
+.emptyState p:first-child {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.emptyHint {
+  font-size: 16px;
+  font-style: italic;
+}
+
