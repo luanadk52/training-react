@@ -46,25 +46,39 @@
 }
 
 .button {
-  padding: 6px 10px;
-  border: none;
+  padding: 8px 14px;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
   transition: all 0.2s ease;
-  background-color: transparent;
+  border: 1px solid transparent;
 }
 
 .button:hover {
-  transform: scale(1.1);
+  transform: translateY(-2px);
+}
+
+.editButton {
+  background-color: #2196F3 !important;
+  color: #ffffff !important;
+  border-color: #1976D2 !important;
 }
 
 .editButton:hover {
-  background-color: rgba(33, 150, 243, 0.1);
+  background-color: #1976D2 !important;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+}
+
+.deleteButton {
+  background-color: #F44336 !important;
+  color: #ffffff !important;
+  border-color: #D32F2F !important;
 }
 
 .deleteButton:hover {
-  background-color: rgba(244, 67, 54, 0.1);
+  background-color: #D32F2F !important;
+  box-shadow: 0 2px 8px rgba(244, 67, 54, 0.3);
 }
 
 .editInput {

@@ -33,6 +33,7 @@
   background-color: var(--primary-color);
   color: var(--bg-color);
   border-color: var(--primary-dark);
+  font-weight: bold;
 }
 
 .count {

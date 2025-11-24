@@ -36,14 +36,15 @@ const TodoStats = memo(function TodoStats({ total, active, completed, onClearCom
         />
       </div>
 
-      {completed > 0 && (
+      {/* Temporarily hidden */}
+      {/* {completed > 0 && (
         <button
           onClick={onClearCompleted}
           className={styles.clearButton}
         >
           Clear Completed ({completed})
         </button>
-      )}
+      )} */}
     </div>
   );
 });
