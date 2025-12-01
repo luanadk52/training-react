@@ -1,0 +1,13 @@
+.usersList {
+  display: grid;
+  gap: 20px;
+}
+
+.noResults {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  color: #7f8c8d;
+  font-size: 18px;
+}

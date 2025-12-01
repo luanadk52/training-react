@@ -1,0 +1,26 @@
+.error {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.error p {
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+.retryBtn {
+  padding: 10px 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.retryBtn:hover {
+  background: #2980b9;
+}
